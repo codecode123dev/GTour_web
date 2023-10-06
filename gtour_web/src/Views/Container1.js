@@ -8,7 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
-import '../assets/container1.scss'
+import '../assets/Container1.scss'
 
 import videobg from '../assets/Spectacular Norway - from the air.mp4';
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/container2.scss'
+import '../assets/Container2.scss'
 
 export default function Container2() {
 
