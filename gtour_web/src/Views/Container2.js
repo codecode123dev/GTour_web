@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/Container2.scss'
+import '../assets/container2.scss'
 
 export default function Container2() {
 
@@ -38,7 +38,7 @@ export default function Container2() {
         <div className="content-custom">
           {divsData.map((divData, index) => (
             <div key={index} className="custom-div" >
-             <a href={divData.link}> <img src={divData.imageSrc} alt={`Image ${index}`} /></a>
+             <a href={divData.link}> <img className='location-img' src={divData.imageSrc} alt={`Image ${index}`} /></a>
               <a className="div-text" href={divData.link}>{divData.text}</a>
             </div>
           ))}
