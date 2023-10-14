@@ -117,7 +117,7 @@ function Container1() {
                       <AttachMoneyIcon className='Money-icon' style={{ fontSize:'22px'}} />
                     ),
                   }} /> */}
-                  <input id="keyword" placeholder="Destination, city"/>
+                  <input id="keyword" placeholder="Max budget ex. 500"/>
                   <i class="fas fa-dollar-sign"></i>
                 </div>
               </div>
