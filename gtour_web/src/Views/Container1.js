@@ -34,13 +34,8 @@ function Container1() {
         <div className='tour_search_wrapper'>
           <div style={{ display: 'flex', alignItems: 'start', gap: '10px' }} className='cc'>
             <div className="one_fourth themeborder">
-              <TextField className='keyword' placeholder="Destination, city"
-                InputProps={{
-                  endAdornment: (
-                    <SearchIcon className='Search-icon' />
-                  ),
-                }}
-              />
+              <input id="keyword" placeholder="Destination, city"/>
+              <i class="fas fa-search"></i>
 
             </div>
 
@@ -59,7 +54,7 @@ function Container1() {
                 <option className='option-item' >November</option>
                 <option className='option-item' >	December</option>
               </select>
-              <CalendarTodayIcon className='calendar-icon' />
+              <CalendarTodayIcon className='calendar-icon' style={{ fontSize:'19px'}} />
             </div>
 
             <div className="one_fourth themeborder">
@@ -71,10 +66,10 @@ function Container1() {
                 <option className='option-item' >Sort By Name</option>
                 <option className='option-item' >Sort By Popularity</option>
               </select>
-              <SwapVertIcon className='SwapVert-icon' />
+              <SwapVertIcon className='SwapVert-icon' style={{ fontSize:'19px'}} />
             </div>
-            <div className='one_fourth last'>
-              <Button className='tour_search_btn' variant="contained" style={{ backgroundColor: 'red', color: 'white' }}>
+            <div className='one_fourth last' style={{border:'none'}}>
+              <Button className='tour_search_btn' variant="contained" style={{ backgroundColor: '#FF4A52', color: 'white' }}>
                 Search
               </Button>
             </div>
@@ -94,7 +89,7 @@ function Container1() {
                     <option className='option-item' >Snow & Ice</option>
                     <option className='option-item' >Wildlife</option>
                   </select>
-                  <KeyboardArrowDownIcon className='ArrowDown-icon' />
+                  <KeyboardArrowDownIcon className='ArrowDown-icon'  style={{ fontSize:'19px'}} />
                 </div>
 
                 <div className="one_fourth themeborder">
@@ -113,22 +108,24 @@ function Container1() {
                     <option className='option-item' >Santorini</option>
                     <option className='option-item' >Hong Kong</option>
                   </select>
-                  <KeyboardArrowDownIcon className='ArrowDown-icon' />
+                  <KeyboardArrowDownIcon className='ArrowDown-icon' style={{ fontSize:'19px'}} />
                 </div>
 
                 <div className="one_fourth themeborder">
-                  <TextField placeholder="Max budget ex. 500" InputProps={{
+                  {/* <TextField className='keyword' placeholder="Max budget ex. 500" InputProps={{
                     endAdornment: (
-                      <AttachMoneyIcon className='Money-icon' />
+                      <AttachMoneyIcon className='Money-icon' style={{ fontSize:'22px'}} />
                     ),
-                  }} />
+                  }} /> */}
+                  <input id="keyword" placeholder="Destination, city"/>
+                  <i class="fas fa-dollar-sign"></i>
                 </div>
               </div>
 
             )}
           </div>
 
-          <Button variant="contained" onClick={toggleInputs} className='show-btn'>
+          <Button  variant="text" onClick={toggleInputs} className='show-btn' style={{color:'#fff', fontSize:'11px'}} >
             {showInputs ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             <p>Advanced Search</p>
           </Button>

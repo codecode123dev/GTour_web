@@ -184,16 +184,16 @@ function Footer_Tour() {
         <div class="footer_bar_wrapper ">
           <div class="menu-footer-menu-container"><ul id="footer_menu" class="footer_nav">
             <li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-215">
-              <a href="https://themes.themegoods.com/grandtour/demo/">Home</a>
+              <a className='footer-content' href="https://themes.themegoods.com/grandtour/demo/">Home</a>
             </li>
             <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216">
-              <a href="https://themes.themegoods.com/grandtour/demo/tours/">Tours</a>
+              <a  className='footer-content' href="https://themes.themegoods.com/grandtour/demo/tours/">Tours</a>
             </li>
             <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
-              <a href="https://themes.themegoods.com/grandtour/demo/blog/">Blog</a>
+              <a  className='footer-content' href="https://themes.themegoods.com/grandtour/demo/blog/">Blog</a>
             </li>
             <li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218">
-              <a href="#">Purchase Theme</a>
+              <a  className='footer-content' href="#">Purchase Theme</a>
             </li>
           </ul></div>	    <div id="copyright">© Copyright Grand Tour Theme Demo - Theme by ThemeGoods</div>
           <div className={`scroll-to-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
